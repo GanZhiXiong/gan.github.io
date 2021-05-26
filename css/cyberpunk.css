@@ -10246,7 +10246,7 @@ fieldset[disabled] .select select:hover {
 .footer {
   background-color: #151b22;
   padding: 3rem 1.5rem 6rem;
-  color: #0d1118;
+  color: #02d7f2;
 }
 html {
   height: 100%;
@@ -11692,16 +11692,6 @@ body {
   background-color: #02d7f2;
   clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px), 0 0);
   -webkit-clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px), 0 0);
-}
-.card:not(#back-to-top):after {
-  content: 'R' counter(card);
-  position: absolute;
-  color: #02d7f2;
-  right: 2rem;
-  bottom: -0.6em;
-  font-size: 0.75rem;
-  padding: 0 0.25em;
-  background: #0d1118;
 }
 .card:not(#back-to-top) .card-image {
   clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
