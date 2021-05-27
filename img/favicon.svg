@@ -1,14 +1,6 @@
-<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" class="icon">
- <defs>
-  <style type="text/css"/>
- </defs>
- <g>
-  <title>background</title>
-  <rect fill="none" id="canvas_background" height="34" width="34" y="-1" x="-1"/>
- </g>
- <g>
-  <title>Layer 1</title>
-  <ellipse ry="16" rx="16.363629" id="svg_4" cy="16" cx="16" stroke-width="null" fill="#ffffff"/>
-  <text font-weight="normal" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="24.297584" x="3.996924" stroke-width="2" fill="#000000">干</text>
- </g>
+<svg
+    xmlns="http://www.w3.org/2000/svg" version="1.1" width="256" height="256" viewbox="0 0 949 256">
+    <path fill="#2366d1" d="M110.85125168440814 128L221.70250336881628 192L110.85125168440814 256L0 192Z"/>
+    <path fill="#609dff" d="M110.85125168440814 64L221.70250336881628 128L110.85125168440814 192L0 128Z"/>
+    <path fill="#a4c7ff" d="M110.85125168440814 0L221.70250336881628 64L110.85125168440814 128L0 64Z"/>
 </svg>
