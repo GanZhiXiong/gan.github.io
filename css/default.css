@@ -10734,6 +10734,9 @@ body > .section {
 .link-muted:hover {
   color: #3273dc !important;
 }
+.article-categories {
+  color: #3273dc;
+}
 .image.is-7by3 {
   padding-top: 42.8%;
 }
