@@ -2907,7 +2907,7 @@ a.navbar-item:hover,
 a.navbar-item.is-active,
 .navbar-link.is-active {
   background-color: transparent;
-  color: #0d1118;
+  color: #00ff41;
 }
 .navbar-item {
   display: block;
@@ -11142,10 +11142,10 @@ footer.footer .level-end .field {
   cursor: pointer;
 }
 .searchbox .searchbox-close:hover {
-  background: #0d1118;
+  background: #0194a7;
 }
 .searchbox .searchbox-close:active {
-  background: #0d1118;
+  background: #0194a7;
 }
 .searchbox .searchbox-body {
   flex-grow: 1;
@@ -11167,7 +11167,7 @@ footer.footer .level-end .field {
   flex-direction: row;
 }
 .searchbox .searchbox-result-item:not(.disabled):not(.active):not(:active):hover {
-  background-color: #0d1118;
+  background-color: #008000;
 }
 .searchbox .searchbox-result-item:active,
 .searchbox .searchbox-result-item.active {
