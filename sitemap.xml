@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.ganzhixiong.com/p/53ed3754/</loc>
+    
+    <lastmod>2021-07-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.ganzhixiong.com/p/ec65d1ef/</loc>
     
     <lastmod>2021-07-08</lastmod>
@@ -292,6 +299,13 @@
   
   <url>
     <loc>https://www.ganzhixiong.com/tags/Go/</loc>
+    <lastmod>2021-07-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ganzhixiong.com/tags/Slice/</loc>
     <lastmod>2021-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
