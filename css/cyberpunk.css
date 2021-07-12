@@ -11668,34 +11668,6 @@ figure.highlight .section {
     padding: 1.5rem 1rem;
   }
 }
-.mermaid {
-  background: transparent;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.mermaid .label {
-  font-weight: normal;
-  font-size: 0.91rem;
-}
-.mermaid .edgePath .path {
-  stroke: #02d7f2 !important;
-}
-.mermaid .arrowheadPath {
-  fill: #fff !important;
-}
-.mermaid .edgeLabel {
-  background-color: #0d1117 !important;
-  color: #fff !important;
-}
-.mermaid .edgeLabel rect {
-  opacity: 0.5;
-  background-color: transparent !important;
-  fill: transparent !important;
-}
-.mermaid > svg {
-  max-width: none !important;
-  height: auto;
-}
 body {
   counter-reset: card;
 }
@@ -12335,4 +12307,33 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
 .cc-window.cc-banner .cc-compliance > .cc-btn:hover,
 .cc-window.cc-banner .cc-compliance > .cc-btn:focus {
   background-color: #02cce5;
+}
+.mermaid {
+  background: transparent;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+.mermaid .label {
+  font-weight: normal;
+  font-size: 0.91rem;
+}
+.mermaid .edgePath .path {
+  stroke: #02d7f2 !important;
+}
+.mermaid .arrowheadPath {
+  fill: #fff !important;
+}
+.mermaid .edgeLabel {
+  background-color: #0d1117 !important;
+  color: #fff !important;
+}
+.mermaid .edgeLabel rect {
+  opacity: 0.5;
+  background-color: transparent !important;
+  fill: transparent !important;
+}
+.mermaid > svg {
+  height: auto;
 }
