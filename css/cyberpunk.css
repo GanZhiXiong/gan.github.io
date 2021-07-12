@@ -12317,7 +12317,7 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
 }
 .mermaid .label {
   font-weight: normal;
-  font-size: 0.91rem;
+  font-size: 0.88rem;
 }
 .mermaid .edgePath .path {
   stroke: #02d7f2 !important;
@@ -12333,7 +12333,4 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   opacity: 0.5;
   background-color: transparent !important;
   fill: transparent !important;
-}
-.mermaid > svg {
-  height: auto;
 }
