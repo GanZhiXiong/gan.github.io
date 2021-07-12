@@ -11669,7 +11669,6 @@ figure.highlight .section {
 }
 .mermaid {
   background: transparent;
-  font-weight: normal !important;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -11694,4 +11693,5 @@ figure.highlight .section {
 }
 .mermaid > svg {
   max-width: none !important;
+  height: auto;
 }
