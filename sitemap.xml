@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ganzhixiong.com/p/711a2f0d/</loc>
+    <loc>https://ganzhixiong.com/p/95b00866/</loc>
     
     <lastmod>2021-08-17</lastmod>
     
@@ -10,6 +10,13 @@
   
   <url>
     <loc>https://ganzhixiong.com/p/464eea27/</loc>
+    
+    <lastmod>2021-08-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/p/711a2f0d/</loc>
     
     <lastmod>2021-08-17</lastmod>
     
@@ -761,6 +768,27 @@
   
   <url>
     <loc>https://ganzhixiong.com/tags/Wekan/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/crontab/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/Cerbot/</loc>
+    <lastmod>2021-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/Let-s-Encrypt/</loc>
     <lastmod>2021-08-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
