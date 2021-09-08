@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ganzhixiong.com/p/9dd93282/</loc>
+    
+    <lastmod>2021-09-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ganzhixiong.com/p/772ecb8b/</loc>
     
     <lastmod>2021-09-08</lastmod>
@@ -901,6 +908,27 @@
   
   <url>
     <loc>https://ganzhixiong.com/tags/Wi-Fi/</loc>
+    <lastmod>2021-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/open/</loc>
+    <lastmod>2021-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/Big-Sur/</loc>
+    <lastmod>2021-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/Karabiner-Elements/</loc>
     <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
