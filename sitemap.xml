@@ -2,23 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ganzhixiong.com/about/index.html</loc>
+    <loc>https://ganzhixiong.com/p/7beffdb5/</loc>
     
     <lastmod>2021-09-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ganzhixiong.com/p/6921bab8/</loc>
+    <loc>https://ganzhixiong.com/about/index.html</loc>
     
-    <lastmod>2021-09-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ganzhixiong.com/p/7beffdb5/</loc>
-    
-    <lastmod>2021-09-19</lastmod>
+    <lastmod>2021-09-24</lastmod>
     
   </url>
   
@@ -1048,20 +1041,6 @@
   
   <url>
     <loc>https://ganzhixiong.com/tags/Tools/</loc>
-    <lastmod>2021-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ganzhixiong.com/tags/Getting-Started/</loc>
-    <lastmod>2021-09-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ganzhixiong.com/tags/Icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2021-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
