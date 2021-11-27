@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>解决 Dell XPS 15 9570 电池不充电的问题 - 干志雄的博客</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="干志雄的博客"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="干志雄的博客"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Windows 用的比较少，再加上前一阵子通过 PD 17 在 macOS 中安装了 Win11，体验比之前的 PD 版本流畅很多了。所以我这台配置较高的 Dell XPS 15 9570 也就更加少用了。但是这台笔记本的电池有问题，充不进去电，由于充不进电的时候就已经过保了，有没有时间去查问题，因此一直搁置此问题。直到最近没那么忙了，也就抽时间解决了此问题。对于此问题及解决过程的总结如下：  如"><meta property="og:type" content="blog"><meta property="og:title" content="解决 Dell XPS 15 9570 电池不充电的问题"><meta property="og:url" content="https://ganzhixiong.com/p/d0be0fa/"><meta property="og:site_name" content="干志雄的博客"><meta property="og:description" content="Windows 用的比较少，再加上前一阵子通过 PD 17 在 macOS 中安装了 Win11，体验比之前的 PD 版本流畅很多了。所以我这台配置较高的 Dell XPS 15 9570 也就更加少用了。但是这台笔记本的电池有问题，充不进去电，由于充不进电的时候就已经过保了，有没有时间去查问题，因此一直搁置此问题。直到最近没那么忙了，也就抽时间解决了此问题。对于此问题及解决过程的总结如下：  如"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271103106.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271105829.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271843379.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271909744.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280134665.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280137640.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280132355.png"><meta property="article:published_time" content="2021-11-26T09:45:38.000Z"><meta property="article:modified_time" content="2021-11-27T17:40:52.319Z"><meta property="article:author" content="干志雄"><meta property="article:tag" content="Windows"><meta property="article:tag" content="Dell"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271103106.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://ganzhixiong.com/p/d0be0fa/"},"headline":"解决 Dell XPS 15 9570 电池不充电的问题","image":["https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271103106.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271105829.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271843379.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271909744.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280134665.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280137640.png","https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280132355.png"],"datePublished":"2021-11-26T09:45:38.000Z","dateModified":"2021-11-27T17:40:52.319Z","author":{"@type":"Person","name":"干志雄"},"publisher":{"@type":"Organization","name":"干志雄的博客","logo":{"@type":"ImageObject","url":{"text":"🤟 Gan's Blog 🎸"}}},"description":"Windows 用的比较少，再加上前一阵子通过 PD 17 在 macOS 中安装了 Win11，体验比之前的 PD 版本流畅很多了。所以我这台配置较高的 Dell XPS 15 9570 也就更加少用了。但是这台笔记本的电池有问题，充不进去电，由于充不进电的时候就已经过保了，有没有时间去查问题，因此一直搁置此问题。直到最近没那么忙了，也就抽时间解决了此问题。对于此问题及解决过程的总结如下：  如"}</script><link rel="canonical" href="https://ganzhixiong.com/p/d0be0fa/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/xt256.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&amp;family=Roboto+Mono"><link rel="stylesheet" href="/css/cyberpunk.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">🤟 Gan&#039;s Blog 🎸</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" target="_blank" rel="noopener" href="https://wekan.ganzhixiong.com/">Wekan</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="干志雄的GitHub" href="https://github.com/ganzhixiong"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-11-26T09:45:38.000Z" title="11/26/2021, 5:45:38 PM">2021-11-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-11-27T17:40:52.319Z" title="11/28/2021, 1:40:52 AM">2021-11-28</time></span><span class="level-item">9 minutes read (About 1398 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">解决 Dell XPS 15 9570 电池不充电的问题</h1><div class="content"><p>Windows 用的比较少，再加上前一阵子通过 PD 17 在 macOS 中安装了 Win11，体验比之前的 PD 版本流畅很多了。所以我这台配置较高的 Dell XPS 15 9570 也就更加少用了。<br>但是这台笔记本的电池有问题，充不进去电，由于充不进电的时候就已经过保了，有没有时间去查问题，因此一直搁置此问题。直到最近没那么忙了，也就抽时间解决了此问题。对于此问题及解决过程的总结如下：</p>
+<ul>
+<li>如果笔记本接上电源，电池的电量一直显示百分之十几，充不进电，哪怕电池损耗不到一半（我的电池损耗是 39.33%，通过鲁大师可以查看到电池损耗），请尝试更换电池。</li>
+<li>通过 <a target="_blank" rel="noopener" href="https://www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/software-and-downloads/dell-power-manager">Dell Power Manager</a> 可以查看电池的问题，我这里是提示“需要进行更换”电池。</li>
+<li>取螺丝一定要用匹配的螺丝刀，否则可能会导致螺丝断丝，然后就很难取出来了。<br>这款笔记本的螺丝质量是真差，采用钢化螺丝很贵吗？</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>接上电源不充电，一直显示百分之十几的电量，拔掉电源，笔记本就因没电而关机。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><ul>
+<li><p>用鲁大师或其他工具查看电池的损耗，电池损耗也不到一半啊，难道这个电池损耗不准确？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271103106.png"></p>
+</li>
+<li><p>通过 <a target="_blank" rel="noopener" href="https://www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/software-and-downloads/dell-power-manager">Dell Power Manager</a> 可以查看电池的问题，我这里是提示“需要进行更换”电池。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271105829.png"></p>
+</li>
+</ul>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h3 id="查看保修期"><a href="#查看保修期" class="headerlink" title="查看保修期"></a>查看保修期</h3><p>首先查看是否过保，没有过保就直接打 Dell 售后的电话咨询电池能否更换。<br>查看是否过保有两种方法。</p>
+<h4 id="安装-SupportAssist-查询（推荐）"><a href="#安装-SupportAssist-查询（推荐）" class="headerlink" title="安装 SupportAssist 查询（推荐）"></a>安装 SupportAssist 查询（推荐）</h4><p>安装 <a target="_blank" rel="noopener" href="https://www.dell.com/support/contents/zh-cn/article/product-support/self-support-knowledgebase/software-and-downloads/supportassist?lwp=rt">面向家用 PC 的 SupportAssist | Dell 中国</a>，它不仅可以查看保修信息，还可以安装驱动、性能优化、删除病毒等。</p>
+<blockquote>
+<p>SupportAssist¹ 是 PC 上提供的一种智能技术，可通过删除病毒、检测问题、优化设置以及按需提供更新通知来让 PC 一直如同新系统一样顺畅运行。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271843379.png"></p>
+<h4 id="通过官网查询"><a href="#通过官网查询" class="headerlink" title="通过官网查询"></a>通过官网查询</h4><p>打开 <a target="_blank" rel="noopener" href="https://www.dell.com/support/home/zh-cn?app=warranty">保修和合同 | Dell 中国</a> 输入如服务编号或 Dell EMC 产品 ID，服务编号可以在电脑机身上看到。</p>
+<h3 id="在保修期内"><a href="#在保修期内" class="headerlink" title="在保修期内"></a>在保修期内</h3><p>如果在保修期内那就在这个页面 <a target="_blank" rel="noopener" href="https://www.dell.com/learn/cn/zh/cndhs1/campaigns/con-self-qna">戴尔售后服务及热门咨询 | Dell 中国大陆</a> 咨询吧！</p>
+<h3 id="不在保修期内"><a href="#不在保修期内" class="headerlink" title="不在保修期内"></a>不在保修期内</h3><p>既然 Dell 官方软件 Dell Power Manager 都提示要更换电池了，那就更换个电池试试吧。</p>
+<ol>
+<li><p>电池我是直接在拼多多上买的，拼多多上比较实惠，但也有假货，需要自己学会鉴别。</p>
+</li>
+<li><p>Dell XPS 系列拆机是很简单的。需要注意的是那个小后盖的里面有两个螺丝，也是需要取下的，而且一定要用匹配的螺丝刀取，不然螺丝就可能会断丝很难取出，然后变成下图这样。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111271909744.png"></p>
+<p>最终找电脑店花了 50 元给取出来，不过破相了，还好有个小盖子。</p>
+<p>这就是那两个螺丝，这质量，钢化螺丝很贵吗？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280134665.png"></p>
+</li>
+<li><p>顺便清理下了风扇，并清理重新添加 CPU、GPU 旧的硅脂。<br>买来到现在 3 年 4 个多月，虽然平时也只有做 Windows 项目的时候采用，但是通过清理前后对比图，看出里面还是挺脏的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280137640.png"></p>
+<blockquote>
+<p>硅脂的作用就是填补散热器与芯片之间的空隙，拿我们熟知的CPU与其散热器来说，其实我们看似光滑的表面其实在微观状态下是沟壑纵横的，CPU表面我们肉眼都可见很多打磨痕迹，而作为散热器大家的利民也逃不过坑坑洼洼的命运。</p>
+<p>涂抹的均匀而厚薄合适的硅脂可以很好的填补这些漏洞，使其更加紧密接触，增加散热面积，提升散热效果，而硅脂本身的导热效果，也决定着最后的实际使用效果。</p>
+<p>硅脂的涂抹其实并不难，重点在于两个字，<strong>匀</strong> 且 <strong>薄</strong> 这里纠正一个错误的观念，那就是硅脂并不是厚了好，而是薄了才好。推荐用手指涂抹，因为手指的感觉是很准确的。虽然有专用的刮刀,但是用好那个东西，真心不易。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/202111280132355.png"></p>
+<p>整个内部的零件布局还是挺整洁的，这一点还是的给个赞 👍。</p>
+</li>
+</ol>
+</div><div class="article-licensing box"><div class="licensing-title"><p>解决 Dell XPS 15 9570 电池不充电的问题</p><p><a href="https://ganzhixiong.com/p/d0be0fa/">https://ganzhixiong.com/p/d0be0fa/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>干志雄</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-11-26</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-11-28</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Windows/">Windows</a><a class="link-muted mr-2" rel="tag" href="/tags/Dell/">Dell</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/alipay.png" alt="Alipay"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/wechat-pay.png" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/p/5cfaa141/"><span class="level-item">Error installing cocoapods: cocoapods-core requires Ruby version &gt;= 2.6. The current ruby version is 2.5.8.224.</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="comment-container"></div><link rel="stylesheet" href="/css/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "dad0f65c3151c501d3341ac4dab71fb9",
+            repo: "ganzhixiong.github.io",
+            owner: "ganzhixiong",
+            clientID: "65ecdc2420620ea7e91a",
+            clientSecret: "5726f76dd701eb327f588948509861c91390d101",
+            admin: ["ganzhixiong"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#问题"><span class="level-left"><span class="level-item">1</span><span class="level-item">问题</span></span></a></li><li><a class="level is-mobile" href="#原因"><span class="level-left"><span class="level-item">2</span><span class="level-item">原因</span></span></a></li><li><a class="level is-mobile" href="#解决"><span class="level-left"><span class="level-item">3</span><span class="level-item">解决</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#查看保修期"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">查看保修期</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#安装-SupportAssist-查询（推荐）"><span class="level-left"><span class="level-item">3.1.1</span><span class="level-item">安装 SupportAssist 查询（推荐）</span></span></a></li><li><a class="level is-mobile" href="#通过官网查询"><span class="level-left"><span class="level-item">3.1.2</span><span class="level-item">通过官网查询</span></span></a></li></ul></li><li><a class="level is-mobile" href="#在保修期内"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">在保修期内</span></span></a></li><li><a class="level is-mobile" href="#不在保修期内"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">不在保修期内</span></span></a></li></ul></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-26T09:45:38.000Z">2021-11-26</time></p><p class="title"><a href="/p/d0be0fa/">解决 Dell XPS 15 9570 电池不充电的问题</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-14T10:42:17.000Z">2021-11-14</time></p><p class="title"><a href="/p/5cfaa141/">Error installing cocoapods: cocoapods-core requires Ruby version &gt;= 2.6. The current ruby version is 2.5.8.224.</a></p><p class="categories"><a href="/categories/iOS/">iOS</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-09T13:24:24.000Z">2021-11-09</time></p><p class="title"><a href="/p/5564d3fb/">解决 iOS 微信发送 GIF 图片不能直接预览的问题</a></p><p class="categories"><a href="/categories/Tools/">Tools</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-08T06:54:17.000Z">2021-11-08</time></p><p class="title"><a href="/p/7510020c/">小于 25M 的视频竟然微信还要压缩，那怎么办？</a></p><p class="categories"><a href="/categories/Tools/">Tools</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-28T10:53:19.000Z">2021-10-28</time></p><p class="title"><a href="/p/80561f8f/">使用 GitHub Skyline API 获取 GitHub 用户贡献（翻译）</a></p><p class="categories"><a href="/categories/GitHub/">GitHub</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">🤟 Gan&#039;s Blog 🎸</a><p class="is-size-7"><span>&copy; 2021 干志雄</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><a class="is-size-7" href="http://beian.miit.gov.cn/" target="_blank"> 粤ICP备2021124782号</a></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="干志雄的GitHub" href="https://github.com/ganzhixiong"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js"></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
