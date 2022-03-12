@@ -12150,7 +12150,9 @@ fieldset[disabled] .button:not(input).is-grey-lightest.is-inverted:before:before
   -webkit-clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
 }
 .tags.has-addons .tag:first-child {
-  background: #00ff41 !important;
+  background: transparent !important;
+  border: 0.6px solid #03d7f2;
+  color: #cdcdcd;
 }
 .tags.has-addons .tag:last-child {
   background: #02d7f2 !important;
