@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ganzhixiong.com/p/83f35d67/</loc>
+    
+    <lastmod>2022-04-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ganzhixiong.com/p/cf1fabff/</loc>
     
     <lastmod>2022-04-13</lastmod>
@@ -1741,6 +1748,27 @@
   
   <url>
     <loc>https://ganzhixiong.com/tags/MSBuild/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/NET-Framework/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/VS-2022/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ganzhixiong.com/tags/VS-2019/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
