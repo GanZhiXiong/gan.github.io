@@ -12257,6 +12257,19 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   color: #8b949e;
   padding: 14px;
 }
+.media .media-content .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.media .media-content .title:hover {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  white-space: normal;
+}
 .footer {
   position: relative;
 }
