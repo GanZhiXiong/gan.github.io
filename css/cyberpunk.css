@@ -10867,6 +10867,10 @@ article.article .content .message.message-immersive {
 article.article .content .message.message-immersive .message-body {
   border: none;
 }
+article.article .article-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
 .rtl {
   direction: rtl;
 }
@@ -10946,6 +10950,9 @@ a.article-nav-next span {
 .navbar-main {
   box-shadow: none;
 }
+.navbar-main .navbar-container {
+  overflow-x: auto;
+}
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
 .navbar-main .navbar-end {
@@ -10990,6 +10997,12 @@ a.article-nav-next span {
 }
 .navbar-logo img {
   max-height: 1.75rem;
+}
+@media screen and (min-width: 1088px) {
+  .navbar > .container .navbar-menu,
+  .container > .navbar .navbar-menu {
+    margin-right: 0rem;
+  }
 }
 @media screen and (max-width: 768px) {
   footer.footer .level-start {
@@ -12351,4 +12364,26 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   opacity: 0.5;
   background-color: transparent !important;
   fill: transparent !important;
+}
+.content table td,
+.content table th {
+  vertical-align: top;
+  padding: 6px 13px;
+  border: 1px solid #30363d;
+  vertical-align: inherit;
+}
+.content table tr:nth-child(2n) {
+  background-color: #161b22;
+}
+.content table thead td,
+.content table thead th {
+  vertical-align: top;
+  padding: 6px 13px;
+  border: 1px solid #30363d;
+}
+.content table tbody tr:last-child td,
+.content table tbody tr:last-child th {
+  vertical-align: top;
+  padding: 6px 13px;
+  border: 1px solid #30363d;
 }
