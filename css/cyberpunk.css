@@ -12387,3 +12387,7 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   padding: 6px 13px;
   border: 1px solid #30363d;
 }
+.highlight-body table tbody tr:last-child td,
+.content table tbody tr:last-child th {
+  border-width: 0;
+}
