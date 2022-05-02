@@ -12365,6 +12365,9 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   background-color: transparent !important;
   fill: transparent !important;
 }
+/*
+仿 GitHub table 样式
+*/
 .content table td,
 .content table th {
   vertical-align: top;
@@ -12390,4 +12393,11 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
 .highlight-body table tbody tr:last-child td,
 .content table tbody tr:last-child th {
   border-width: 0;
+}
+.field.is-grouped.is-grouped-multiline > .control:not(:last-child) {
+  margin-bottom: 0.85rem;
+  margin-right: 0.85rem;
+}
+.field.is-grouped.is-grouped-multiline {
+  margin-top: 16px;
 }
