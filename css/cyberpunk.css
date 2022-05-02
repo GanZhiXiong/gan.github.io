@@ -12395,8 +12395,8 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
   border-width: 0;
 }
 .field.is-grouped.is-grouped-multiline > .control:not(:last-child) {
-  margin-bottom: 0.85rem;
-  margin-right: 0.85rem;
+  margin-bottom: 0.86rem;
+  margin-right: 0.86rem;
 }
 .field.is-grouped.is-grouped-multiline {
   margin-top: 16px;
