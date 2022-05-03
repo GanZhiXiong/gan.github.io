@@ -12167,7 +12167,8 @@ fieldset[disabled] .button:not(input).is-grey-lightest.is-inverted:before:before
 }
 .tags.has-addons .tag:first-child {
   background: transparent !important;
-  border: 0.6px solid #03d7f2;
+  border: 1px solid rgba(132,132,132,0.459);
+  border-right-width: 0;
   color: #cdcdcd;
 }
 .tags.has-addons .tag:last-child {
@@ -12393,11 +12394,4 @@ fieldset[disabled] article.article .article-more.is-inverted:before:before {
 .highlight-body table tbody tr:last-child td,
 .content table tbody tr:last-child th {
   border-width: 0;
-}
-.field.is-grouped.is-grouped-multiline > .control:not(:last-child) {
-  margin-bottom: 0.86rem;
-  margin-right: 0.86rem;
-}
-.field.is-grouped.is-grouped-multiline {
-  margin-top: 16px;
 }
