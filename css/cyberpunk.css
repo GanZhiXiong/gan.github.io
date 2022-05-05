@@ -12167,7 +12167,7 @@ fieldset[disabled] .button:not(input).is-grey-lightest.is-inverted:before:before
 }
 .tags.has-addons .tag:first-child {
   background: transparent !important;
-  border: 1px solid rgba(132,132,132,0.459);
+  border: 1px solid rgba(29,215,240,0.329);
   border-right-width: 0;
   color: #cdcdcd;
 }
