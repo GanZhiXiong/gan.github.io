@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Git Commit Message 规范 - 干志雄的博客</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="干志雄的博客"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="干志雄的博客"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="在 GitHub 上大多数知名项目的 Git Commit Message 其实都没有具体的规范，其他更多的仓库的 Git Commit Message 更是五花八门，有的甚至没有写 Commit Message 或乱写。 规范的 Commit Message 在 review 代码的时候会更清晰，甚至通过 conventional-changelog 可以根据规范的 Commit 自动生成 ch"><meta property="og:type" content="blog"><meta property="og:title" content="Git Commit Message 规范"><meta property="og:url" content="https://ganzhixiong.com/p/22b26c8/"><meta property="og:site_name" content="干志雄的博客"><meta property="og:description" content="在 GitHub 上大多数知名项目的 Git Commit Message 其实都没有具体的规范，其他更多的仓库的 Git Commit Message 更是五花八门，有的甚至没有写 Commit Message 或乱写。 规范的 Commit Message 在 review 代码的时候会更清晰，甚至通过 conventional-changelog 可以根据规范的 Commit 自动生成 ch"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ganzhixiong.com/img/og_image.png"><meta property="article:published_time" content="2022-05-19T09:36:43.000Z"><meta property="article:modified_time" content="2022-05-19T09:36:43.000Z"><meta property="article:author" content="干志雄"><meta property="article:tag" content="Git"><meta property="article:tag" content="conventional-changelog"><meta property="article:tag" content="Vue"><meta property="article:tag" content="Angular"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://ganzhixiong.com/p/22b26c8/"},"headline":"Git Commit Message 规范","image":["https://ganzhixiong.com/img/og_image.png"],"datePublished":"2022-05-19T09:36:43.000Z","dateModified":"2022-05-19T09:36:43.000Z","author":{"@type":"Person","name":"干志雄"},"publisher":{"@type":"Organization","name":"干志雄的博客","logo":{"@type":"ImageObject","url":{"text":"🤟 Gan's Blog 🎸"}}},"description":"在 GitHub 上大多数知名项目的 Git Commit Message 其实都没有具体的规范，其他更多的仓库的 Git Commit Message 更是五花八门，有的甚至没有写 Commit Message 或乱写。 规范的 Commit Message 在 review 代码的时候会更清晰，甚至通过 conventional-changelog 可以根据规范的 Commit 自动生成 ch"}</script><link rel="canonical" href="https://ganzhixiong.com/p/22b26c8/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/xt256.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&amp;family=Roboto+Mono"><link rel="stylesheet" href="/css/cyberpunk.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+          Array
+              .from(document.querySelectorAll('.tab-content'))
+              .forEach($tab => {
+                  $tab.classList.add('is-hidden');
+              });
+          Array
+              .from(document.querySelectorAll('.tabs li'))
+              .forEach($tab => {
+                  $tab.classList.remove('is-active');
+              });
+          const $activeTab = document.querySelector(location.hash);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+          const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">🤟 Gan&#039;s Blog 🎸</a></div><div class="navbar-menu"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" target="_blank" rel="noopener" href="https://wekan.ganzhixiong.com/">Wekan</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="干志雄的GitHub" href="https://github.com/ganzhixiong"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-05-19T09:36:43.000Z" title="2022/5/19 17:36:43">2022-05-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2022-05-19T09:36:43.000Z" title="2022/5/19 17:36:43">2022-05-19</time></span><span class="level-item"><a class="link-muted article-categories" href="/categories/Git/">Git</a></span><span class="level-item">11 minutes read (About 1608 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Git Commit Message 规范</h1><div class="content"><p>在 GitHub 上大多数知名项目的 Git Commit Message 其实都没有具体的规范，其他更多的仓库的 Git Commit Message 更是五花八门，有的甚至没有写 Commit Message 或乱写。</p>
+<p>规范的 Commit Message 在 review 代码的时候会更清晰，甚至通过 <a target="_blank" rel="noopener" href="https://github.com/conventional-changelog/conventional-changelog">conventional-changelog</a> 可以根据规范的 Commit 自动生成 changlogs 和 release notes。</p>
+<span id="more"></span>
+
+<blockquote>
+<p>这是改编自<a target="_blank" rel="noopener" href="https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular">Angular 的提交约定</a>。</p>
+</blockquote>
+<h2 id="提交消息格式"><a href="#提交消息格式" class="headerlink" title="提交消息格式"></a>提交消息格式</h2><p><em>本规范的灵感来自并取代了<a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#">AngularJS 提交消息格式</a>。</em></p>
+<p>我们对如何格式化 Git 提交消息有非常精确的规则。这种格式导致<strong>更容易阅读提交历史</strong>。</p>
+<p>每个提交消息都由一个<strong>header</strong>、一个<strong>body</strong>和一个<strong>footer</strong>组成。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;header&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;footer&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>header</code>是强制性的。</li>
+<li>除了“docs”类型的<code>body</code>提交之外，所有提交都是强制性的。当正文出现时，它必须至少有 20 个字符长并且必须符合 <a target="_blank" rel="noopener" href="https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit-body">提交消息正文</a> 格式。</li>
+<li>footer`是可选的。<a target="_blank" rel="noopener" href="https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit-footer">提交消息页脚</a> 格式描述了页脚的用途和它必须具有的结构。</li>
+</ul>
+<h3 id="Commit-Message-Header"><a href="#Commit-Message-Header" class="headerlink" title="Commit Message Header"></a>Commit Message Header</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;type&gt;(&lt;scope&gt;): &lt;short summary&gt;</span><br><span class="line">  │       │             │</span><br><span class="line">  │       │             └─⫸ 用现在时概括。没有大写。最后没有句号。</span><br><span class="line">  │       │</span><br><span class="line">  │       └─⫸ Commit Scope: animations|bazel|benchpress|common|compiler|compiler-cli|core|</span><br><span class="line">  │                          elements|forms|http|language-service|localize|platform-browser|</span><br><span class="line">  │                          platform-browser-dynamic|platform-server|router|service-worker|</span><br><span class="line">  │                          upgrade|zone.js|packaging|changelog|docs-infra|migrations|ngcc|ve|</span><br><span class="line">  │                          devtools</span><br><span class="line">  │</span><br><span class="line">  └─⫸ Commit Type: build|workflow|ci|docs|feat|fix|polish|perf|refactor|test|chore</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;type&gt;</code>和<code>&lt;summary&gt;</code>字段是必需的，字段<code>(&lt;scope&gt;)</code>是可选的。 </p>
+<h4 id="type"><a href="#type" class="headerlink" title="type"></a>type</h4><p>Type 必须是以下之一：</p>
+<ul>
+<li><strong>build</strong>：影响构建系统或外部依赖项的更改（示例范围：gulp、broccoli、npm）</li>
+<li><strong>ci</strong>：更改我们的 CI 配置文件和脚本（例如：CircleCi、SauceLabs）</li>
+<li><strong>docs</strong>：仅文档更改</li>
+<li><strong>feat</strong>：一个新功能</li>
+<li><strong>fix</strong>：错误修复</li>
+<li>polish: 改进，完善</li>
+<li><strong>perf</strong>：提高性能的代码更改</li>
+<li><strong>refactor</strong>：既不修复错误也不添加功能的代码更改</li>
+<li><strong>test</strong>：添加缺失的测试或纠正现有的测试</li>
+</ul>
+<p>如果前缀是<code>feat</code>,<code>fix</code>或<code>perf</code>，它将出现在更新日志中。但是，如果有任何<a target="_blank" rel="noopener" href="https://github.com/vuejs/vue/blob/dev/.github/COMMIT_CONVENTION.md#footer">BREAKING CHANGE</a>，则提交将始终出现在更改日志中。</p>
+<p>其他前缀由您自行决定。建议的前缀是<code>docs</code>, <code>chore</code>, <code>style</code>, <code>refactor</code>, 和<code>test</code>用于非变更日志相关的任务。</p>
+<h4 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h4><p>范围可以是指定提交更改位置的任何内容。例如 Vue.js 中的<code>core</code>, <code>compiler</code>, <code>ssr</code>,<code>v-model</code>等<code>transition</code>…</p>
+<h4 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h4><p>summary 即摘要。</p>
+<p>使用摘要字段提供更改的简洁描述：</p>
+<ul>
+<li>使用祈使语气，现在时：“change”不是“changed”也不是“changes”</li>
+<li>第一个字母不要大写</li>
+<li>末尾没有点 (.)</li>
+</ul>
+<h3 id="Commit-Message-Body"><a href="#Commit-Message-Body" class="headerlink" title="Commit Message Body"></a>Commit Message Body</h3><p>就像在摘要中一样，使用祈使语气，现在时：“fix”不是“fixed”也不是“fixes”。</p>
+<p>解释提交消息正文中更改的动机。此提交消息应解释<em>您</em>进行更改的原因。您可以将先前行为与新行为进行比较，以说明更改的影响。</p>
+<h3 id="Commit-Message-Footer"><a href="#Commit-Message-Footer" class="headerlink" title="Commit Message Footer"></a>Commit Message Footer</h3><p>页脚可以包含有关重大更改和弃用的信息，也是引用 GitHub 问题、Jira 票证和此提交关闭或相关的其他 PR 的地方。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">BREAKING CHANGE: &lt;breaking change summary&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;breaking change description + migration instructions&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">Fixes #&lt;issue number&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">DEPRECATED: &lt;what is deprecated&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;deprecation description + recommended update path&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">&lt;BLANK LINE&gt;</span><br><span class="line">Closes #&lt;pr number&gt;</span><br></pre></td></tr></table></figure>
+
+<p>重大变更部分应以短语“BREAKING CHANGE:”开头，后跟重大变更摘要、空白行和包括迁移说明的重大变更的详细说明。</p>
+<p>类似地，弃用部分应以“DEPRECATED：”开头，然后是弃用内容的简短描述、空行和弃用的详细描述，其中还提到了推荐的更新路径。</p>
+<h2 id="Revert"><a href="#Revert" class="headerlink" title="Revert"></a>Revert</h2><p>如果提交还原了先前的提交，它应该以 开头<code>revert: </code>，后跟还原提交的标头。在正文中，它应该说：<code>This reverts commit &lt;hash&gt;.</code>，其中哈希是被还原的提交的 SHA。</p>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="Angular"><a href="#Angular" class="headerlink" title="Angular"></a>Angular</h3><p>angular 代码提交消息是非常规范的，下面列举 <a target="_blank" rel="noopener" href="https://github.com/angular/angular">angular/angular: The modern web developer’s platform</a> 代码提交消息示例。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">build: update dependency @types/chrome to ^0.0.184 (#1)</span><br><span class="line">PR Close #1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docs: update readme (#32084)</span><br><span class="line">PR Close #32084</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docs: add template overview doc (#45897)</span><br><span class="line">Organize bottom list into cards.</span><br><span class="line"></span><br><span class="line">PR Close #45897</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docs: update tagline (#41922)</span><br><span class="line">Seems like the tagline has changed on the [Angular Twitter account](https://twitter.com/angular) and angular.io. This change makes this doc in line with those two resources.</span><br><span class="line">PR Close #41922</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fix(docs-infra): correctly style the CLI version in code snippet (#46020)</span><br><span class="line">Some CLI versions (such as `@next`) are not parsed (and thus not</span><br><span class="line">formatted) correctly in code snippets. Fix this by explicitly adding an</span><br><span class="line">appropriate CSS class to the `&lt;aio-angular-dist-tag&gt;` elements to let</span><br><span class="line">PrettyPrint know how to style this token.</span><br><span class="line"></span><br><span class="line">PR Close #46020</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">feat(devtools): support icons in offline mode (#45430) (#45743)</span><br><span class="line">Add support to material design icons in offline mode for Angular Devtools. Self hosting the web font so icons are loaded regardless of network connection.</span><br><span class="line"></span><br><span class="line">Bring the font file as well as its corresponding css file from third_party repo through bazel into shell-browser directory while building.</span><br><span class="line"></span><br><span class="line">PR Close #45743</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">test(core): reset Testability getter after each test (#45947)</span><br><span class="line">This commit updates the Testability-related tests to reset the testability getter class after each test to avoid leaking the state between tests. This should improve the stability of the testability tests that are currently flaky on CI.</span><br><span class="line"></span><br><span class="line">PR Close #45947</span><br></pre></td></tr></table></figure>
+
+<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">release: v3.2.33</span><br></pre></td></tr></table></figure>
+
+
+
+<p>出现在“Features”标题下，子标题<code>compiler</code>：</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feat(compiler): add <span class="comment">&#x27;comments&#x27; option</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feat(compiler): add &#x27;comments&#x27; option</span><br></pre></td></tr></table></figure>
+
+<p>出现在“Bug Fixes”标题、子标题下<code>v-model</code>，带有指向问题 #28 的链接：</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fix</span>(v-model): handle events <span class="keyword">on</span> blur</span><br><span class="line"></span><br><span class="line"><span class="keyword">close</span> #<span class="number">28</span></span><br></pre></td></tr></table></figure>
+
+<p>出现在“性能改进”标题下，并在“重大更改”下显示重大更改说明：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">perf(core): improve vdom diffing by removing &#x27;foo&#x27; option</span><br><span class="line"></span><br><span class="line">BREAKING CHANGE: The &#x27;foo&#x27; option has been removed.</span><br></pre></td></tr></table></figure>
+
+<p>如果它们在同一版本下，则以下提交和提交<code>667ecc1</code>不会出现在更改日志中。如果没有，恢复提交将出现在“Reverts”标题下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">revert: feat(compiler): add &#x27;comments&#x27; option</span><br><span class="line"></span><br><span class="line">This reverts commit 667ecc1654a317a13331b17617d973392f415f02.</span><br></pre></td></tr></table></figure>
+
+<p>页脚应包含有关<strong>Breaking Changes</strong>的任何信息，也是引用此提交<strong>Closes</strong>的 GitHub 问题的地方。</p>
+<p><strong>重大更改</strong><code>BREAKING CHANGE:</code>应以带有空格或两个换行符的单词开头。然后将提交消息的其余部分用于此目的。</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Git Commit Message 规范</p><p><a href="https://ganzhixiong.com/p/22b26c8/">https://ganzhixiong.com/p/22b26c8/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>干志雄</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2022-05-19</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2022-05-19</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="level is-mobile is-flex"><div class="article-tags is-size-7"><i class="fas fa-tags has-text-grey"></i> <div><a class="link-muted" rel="tag" href="/tags/Git/">Git</a><span>,   </span></div><div><a class="link-muted" rel="tag" href="/tags/conventional-changelog/">conventional-changelog</a><span>,   </span></div><div><a class="link-muted" rel="tag" href="/tags/Vue/">Vue</a><span>,   </span></div><a class="link-muted" rel="tag" href="/tags/Angular/">Angular</a></div><!--!--></div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/alipay.png" alt="Alipay"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/ganzhixiong/img/blog/wechat-pay.png" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/p/2e5cd352/"><span class="level-item">GitHub Organization 中的仓库如何免费部署到静态网站托管平台？</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="comment-container"></div><link rel="stylesheet" href="/css/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "7346a35a41031686ab4b3f5da68918af",
+            repo: "ganzhixiong.github.io",
+            owner: "ganzhixiong",
+            clientID: "65ecdc2420620ea7e91a",
+            clientSecret: "5726f76dd701eb327f588948509861c91390d101",
+            admin: ["ganzhixiong"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#提交消息格式"><span class="level-left"><span class="level-item">1</span><span class="level-item">提交消息格式</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Commit-Message-Header"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">Commit Message Header</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#type"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">type</span></span></a></li><li><a class="level is-mobile" href="#scope"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">scope</span></span></a></li><li><a class="level is-mobile" href="#summary"><span class="level-left"><span class="level-item">1.1.3</span><span class="level-item">summary</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Commit-Message-Body"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">Commit Message Body</span></span></a></li><li><a class="level is-mobile" href="#Commit-Message-Footer"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">Commit Message Footer</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Revert"><span class="level-left"><span class="level-item">2</span><span class="level-item">Revert</span></span></a></li><li><a class="level is-mobile" href="#例子"><span class="level-left"><span class="level-item">3</span><span class="level-item">例子</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Angular"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">Angular</span></span></a></li><li><a class="level is-mobile" href="#Vue"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">Vue</span></span></a></li></ul></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-19T09:36:43.000Z">2022-05-19</time></p><p class="title"><a href="/p/22b26c8/">Git Commit Message 规范</a></p><p class="categories"><a href="/categories/Git/">Git</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-05-18T03:07:41.000Z">2022-05-18</time></p><p class="title"><a href="/p/2e5cd352/">GitHub Organization 中的仓库如何免费部署到静态网站托管平台？</a></p><p class="categories"><a href="/categories/GitHub/">GitHub</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-04-23T10:54:54.000Z">2022-04-23</time></p><p class="title"><a href="/p/62ff26bd/">通过排序规则解决 SQL Server 中文显示为问号或乱码</a></p><p class="categories"><a href="/categories/DB/">DB</a> / <a href="/categories/DB/SQL-Server/">SQL Server</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-04-22T03:15:24.000Z">2022-04-22</time></p><p class="title"><a href="/p/2a7f65ca/">DataGrip 如何添加 Azure SQL Edge 的 Data Source？</a></p><p class="categories"><a href="/categories/Tools/">Tools</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-04-21T15:56:39.000Z">2022-04-21</time></p><p class="title"><a href="/p/e7ed9ac3/">解决 DataGrip Query Console 不管选择哪个 schema，始终在 master 下执行</a></p><p class="categories"><a href="/categories/Tools/">Tools</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">🤟 Gan&#039;s Blog 🎸</a><p class="is-size-7"><span>&copy; 2022 干志雄</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><a class="is-size-7" href="http://beian.miit.gov.cn/" target="_blank"> 粤ICP备2021124782号</a></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="干志雄的GitHub" href="https://github.com/ganzhixiong"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js"></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
